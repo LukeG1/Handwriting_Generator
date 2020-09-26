@@ -74,10 +74,10 @@ def draw(t,person):
                 off = -7
 
             if(str(l).islower()):
-                im = Image.open("----PATH_TO_HANDWRITING----\\"+person+"\\"+l+randForm(1)+".png")
+                im = Image.open("----PATH_TO_OUTSIDE_HANDWRITING----\\"+person+"\\"+l+randForm(1)+".png")
                 images.append([im,0,0,off,0])
             else:
-                im = Image.open("----PATH_TO_HANDWRITING----\\"+person+"\\"+l+randForm(0)+".png")
+                im = Image.open("----PATH_TO_OUTSIDE_HANDWRITING----\\"+person+"\\"+l+randForm(0)+".png")
                 images.append([im,0,0,off,0])
 
     #
@@ -161,7 +161,7 @@ def draw(t,person):
 
 draw("""
 Long Data
-""","TESTAUTOCROP")
+""","NAME_OF_HANDWRITING")
 
 # draw(pytesseract.image_to_string(Image.open("C:\\Users\\lmgab\\PycharmProjects\\tensorenv\\handwriting\\dubapp.jpg")))
 
