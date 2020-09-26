@@ -74,10 +74,10 @@ def draw(t,person):
                 off = -7
 
             if(str(l).islower()):
-                im = Image.open("C:\\Users\\lmgab\\Desktop\\mainEnv\\handwriting\\"+person+"\\"+l+randForm(1)+".png")
+                im = Image.open("----PATH_TO_HANDWRITING----\\"+person+"\\"+l+randForm(1)+".png")
                 images.append([im,0,0,off,0])
             else:
-                im = Image.open("C:\\Users\\lmgab\\Desktop\\mainEnv\\handwriting\\"+person+"\\"+l+randForm(0)+".png")
+                im = Image.open("----PATH_TO_HANDWRITING----\\"+person+"\\"+l+randForm(0)+".png")
                 images.append([im,0,0,off,0])
 
     #
@@ -155,7 +155,7 @@ def draw(t,person):
             c+=space+rand.randrange(-2,2)
 
     imF.putalpha(255)
-    imF.save("C:\\Users\\lmgab\\Desktop\\mainEnv\\handwriting\\mostRecent.png")
+    imF.save("----PATH_FOR_TEMPORARY_IMAGE----")
 
     imF.show()
 
